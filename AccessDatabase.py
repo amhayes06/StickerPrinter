@@ -8,11 +8,11 @@ class AccessDatabase:
         self.company = 'empty'
 
     def get_data(self):
-        server_name = r'X3DB\X3V8'
+        server_name = r'####'
         db_name = 'Customer'
         server = "Server=" + str(server_name)
         db = "Database=" + str(db_name)
-        key = "Driver={SQL Server};"+server+";"+db+";"+"UID=data;PWD=proddata"
+        key = "Driver={SQL Server};"+server+";"+db+";"+"UID=####;PWD=####"
 
         cnxn = pyodbc.connect(key)
         cursor = cnxn.cursor()
